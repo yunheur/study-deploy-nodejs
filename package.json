@@ -4,7 +4,7 @@
   "description": "익스프레스로 만드는 SNS 서비스",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production PORT=80 pm2 start app.js -i 0",
+    "start": "pm2 kill && cross-env NODE_ENV=production PORT=8003 pm2 start app.js -i 0",
     "debug": "nodemon --inspect app"
   },
   "author": "yunheur",
@@ -29,6 +29,7 @@
     "passport-kakao": "0.0.5",
     "passport-local": "^1.0.0",
     "pug": "^2.0.3",
-    "sequelize": "^5.2.12"
+    "sequelize": "^5.2.12",
+    "winston": "^3.2.1"
   }
 }
