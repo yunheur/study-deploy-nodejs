@@ -4,13 +4,14 @@
   "description": "익스프레스로 만드는 SNS 서비스",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production PORT=8003 node app",
+    "start": "cross-env NODE_ENV=production PORT=80 pm2 start app.js -i 0",
     "debug": "nodemon --inspect app"
   },
   "author": "yunheur",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^1.18.10",
+    "pm2": "^3.5.0",
     "sequelize-cli": "^5.4.0"
   },
   "dependencies": {
