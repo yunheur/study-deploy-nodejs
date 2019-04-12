@@ -4,7 +4,7 @@
   "description": "익스프레스로 만드는 SNS 서비스",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app",
+    "start": "cross-env NODE_ENV=production PORT=8003 node app",
     "debug": "nodemon --inspect app"
   },
   "author": "yunheur",
@@ -17,6 +17,7 @@
     "bcrypt": "^3.0.5",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
+    "cross-env": "^5.2.0",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
