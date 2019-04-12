@@ -4,7 +4,8 @@
   "description": "익스프레스로 만드는 SNS 서비스",
   "main": "app.js",
   "scripts": {
-    "start": "pm2 kill && cross-env NODE_ENV=production PORT=80 pm2 start app.js -i 0",
+    "start": "pm2 kill && cross-env NODE_ENV=production PORT=8001 pm2 start app.js -i 0",
+    "dev": "nodemon app",
     "debug": "nodemon --inspect app"
   },
   "author": "yunheur",
